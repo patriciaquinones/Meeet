@@ -1,0 +1,185 @@
+:root{
+    --gray: #bccdd5;
+    --cyan: #32f5c8;
+    --darkBlue: #013243;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: var(--darkBlue);
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin-left: 1rem;
+}
+
+h1,p, .imagen{
+    background: transparent;
+}
+
+h1 {
+    position: relative;
+    margin-top: 130px;
+    color: var(--cyan);
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    z-index: 10;
+    background: transparent;
+}
+
+p {
+    color: var(--gray);
+    font: 500 1.3rem;
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+    justify-content: left;
+}
+
+button{
+    background: var(--cyan); ;
+    color: var(--darkBlue);
+    padding: 1rem;
+    font: 700 1.3rem;
+    border-radius: .5rem;
+    border: none;
+    position: relative;
+    z-index: 10;
+}
+
+.imagen{
+    position: absolute;
+    background: transparent;
+}
+
+.img1, .img4, .img5{
+    display: none;
+}
+
+.img3{
+    background: transparent;
+    top: 12%;
+    margin-left: 2rem;
+    width: 6rem;
+    height: auto;
+}
+
+.img2{
+    background: transparent;
+    top: 12%;
+    right: 2%;
+    width: 8rem;
+    height: auto;
+    z-index: 2;
+}
+
+.img6{
+    position: absolute;
+    top: 65%;
+    right: 0;
+    background: transparent;
+    width: 9rem;
+    height: auto;
+    z-index: 2;
+}
+
+footer{
+    display: flex;
+    margin-top: 10rem;
+    color: var(--gray);
+}
+
+
+a{
+    text-transform: none;
+    text-decoration: none;
+    color: var(--gray);
+    font: 500 1.1rem;
+    margin:20px;
+}
+
+/*tablet*/
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
+    p {
+        font-size: 1.5rem;
+        margin-right: 15rem;
+    }
+    button {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    .img1{
+        width: 4rem;
+    }
+    .img2{
+        width: 6rem;
+    }
+    .img6{
+        width: 7rem;
+    }
+    footer{
+        margin-top: 5rem;
+    }
+}
+
+/*desktop*/
+@media screen and (min-width: 1236px) {
+    body{
+        margin-left: 9rem;
+    }
+
+    h1 {
+        margin-top: 5rem;
+        font-size: 8rem;
+        min-width: 1200px;
+    }
+    p {
+        font-size: 1.5rem;
+        margin-right: 15rem;
+        margin-right: 50rem;
+    }
+    button {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .img1, .img2, .img3, .img4, .img5, .img6{
+        display: block;
+    }
+    .img1{
+        width: 6rem;
+        top: 21.5rem;
+        left: 73rem;
+    }
+    .img2{
+        width: 10rem;
+        top: 3rem;
+        left: 68rem;
+    }
+    .img3{
+        width: 8rem;
+        left: 1rem;
+    }
+    .img4{
+        width: 15rem;
+        top: 30rem;
+        left: 60rem;
+    }
+    .img5{
+        width: 7rem;
+        left: 57.5rem;
+        top: 5rem;
+    }
+    .img6{
+        width: 7rem;
+        left: 45rem;
+        top: 23rem;
+    }
+    footer{
+        margin-top: 5rem;
+    }
+}
